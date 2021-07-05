@@ -104,7 +104,7 @@ function printCard(text) {
     <div class="card-body">
       <p class="card-text">${text}</p>
       <div class="text-end">
-          <a style="cursor: pointer;" onclick="copyToClipboard('${text}')" class="card-link"><i class="fa fa-copy"></i></a>
+          <a style="cursor: pointer;" onclick="copyToClipboard('${text}')" class="card-link">Copiar</a>
       </div>
     </div>
   </div>`;
