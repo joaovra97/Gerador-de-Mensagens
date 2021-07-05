@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Mensagens</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container p-5">
+      <h1>Gerador de Mensagens</h1>
+      <br />
+      <form id="form">
+        <div class="input-group">
+          <span class="input-group-text">Saudação: </span>
+          <input type="text"
+            id="salutation"
+            class="form-control"
+            aria-label="Saudação"
+            disabled
+          ></textarea>
+          
+        </div>          
+        <div class="form-check mt-2">
+            <input class="form-check-input" type="checkbox" value="false" id="customSalutation">
+            <label class="form-check-label" for="customSalutation">
+              Saudação Customizada
+            </label>   
+            <br>         
+        </div>                  
+        <span class="small text-danger">*Mantenha o termo {sujeito} para gerar mensagens automáticas.</span>      
+        <br>
+        <br>
+        <div class="input-group">
+          <span class="input-group-text align-items-start">Mensagem: </span>
+          <textarea
+            id="message"
+            class="form-control"
+            aria-label="Mensagem"
+            rows="10"
+          ></textarea>
+        </div>
+        <br />
+        <div class="text-end">
+          <button class="btn btn-primary" type="submit">Gerar Textos</button>
+        </div>
+      </form>
+      <div id="cards" style="display: none;">
+      </div>
+    </div>    
+    <script src="script.js"></script>
+  </body>
+</html>
